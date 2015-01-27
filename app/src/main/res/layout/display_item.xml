@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id = "@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="60dp">
+    <LinearLayout
+        android:layout_width = "200dp"
+        android:layout_height = "match_parent"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/edit_btn"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:src="@drawable/edit_g"
+            android:scaleType="centerInside"
+            android:background="@drawable/basic_button_no_corner_reverse"/>
+        <ImageButton
+            android:id="@+id/delete_btn"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:src="@drawable/delete_w"
+            android:scaleType="centerInside"
+            android:background="@drawable/basic_button_no_corner"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/des"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="120dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:id="@+id/account"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/dark"
+            android:drawableLeft="@drawable/account"
+            android:drawablePadding="5dp"
+            android:layout_toRightOf="@id/des"
+            android:layout_alignTop="@id/des"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+        <TextView
+            android:id="@+id/password"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/dark"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="5dp"
+            android:layout_toRightOf="@id/des"
+            android:layout_alignBottom="@id/des"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+    </RelativeLayout>
+</com.daimajia.swipe.SwipeLayout>
